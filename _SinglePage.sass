@@ -1,0 +1,147 @@
+@import "vars"
+/*Single Page*/
+.singlePage-slider
+  height: 777px
+  background-color: #f7f7f7
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__button
+    background-color: rgba(42, 42, 42, 0.15)
+    width: 47px
+    height: 47px
+    line-height: 47px
+    text-align: center
+  &__button:hover .singlePage-slider__Icon
+    color: $pink
+  &__button:hover
+    cursor: pointer
+  &__Icon
+    color: white
+    transition: all 0.3s
+.singlePage-details
+  display: flex
+  &__invBlock
+    height: 86px
+    width: 100%
+    background-color: #f7f7f7
+    border-bottom: 1px solid $borderGrayColor
+  &__mainBlock
+    min-width: $container
+    border: 1px solid $borderGrayColor
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__specification
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 618px
+    border-bottom: 1px solid $borderGrayColor
+  &__head
+    color: $pink
+    font-size: 14px
+    font-weight: 700
+    margin-top: 73px
+  .line
+    display: flex
+    align-items: center
+    width: 147px
+    height: 3px
+    margin-top: 14px
+    .line1
+      height: 1px
+      width: (147px/3)
+      background-color: $borderGrayColor
+    .line2
+      height: 3px
+      width: (147px/3)
+      background-color: $pink
+  &__name
+    margin-top: 14px
+    font-size: 18px
+    font-weight: 900
+    color: #4d4d4d
+  &__text
+    margin-top: 67px
+    text-align: center
+    font-size: 14px
+    font-weight: 300
+    color: #5e5e5e
+  &__materialDesigner
+    display: flex
+    width: 334px
+    justify-content: space-between
+    margin-top: 28px
+  &__materialDesignerText
+    font-size: 14px
+    color: #b9b9b9
+    font-weight: 700
+  &__materialDesignerText span
+    color: #2f2f2f
+  &__price
+    margin-top: 37px
+    font-size: 24px
+    color: $pink
+    font-weight: 700
+    margin-bottom: 43px
+  &__setup
+    width: 537px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__setupColorSizeQuanity
+    display: flex
+    margin-top: 63px
+    width: 100%
+    justify-content: space-between
+  &__choose p
+    font-size: 14px
+    font-weight: 700
+    color: $textColor
+  &__sort
+    height: 35px
+    width: 144px
+    margin-top: 16px
+    padding-left: 15px
+  &__AddToCart
+    width: 100%
+    height: 55px
+    border: 1px solid $pink
+    margin-top: 28px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $pink
+    font-size: 16px
+    font-weight: 700
+    margin-bottom: 122px
+    transition: color 0.3s
+  &__cart
+    padding-right: 15px
+    font-size: 24px
+  &__AddToCart:hover
+    background-color: $pink
+    color: white
+    cursor: pointer
+.youMayLikeAlso__text
+  text-align: center
+  margin-top: 119px
+  font-size: 24px
+  font-weight: 900
+  color: $textColor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

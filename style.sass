@@ -1,0 +1,572 @@
+@import "product"
+@import "vars"
+@import "SinglePage"
+@import "cartPage"
+@import "checkoutPage"
+/*index page*/
+
+*
+  margin: 0
+  padding: 0
+body
+  font-family: 'Lato', sans-serif
+  min-width: $container
+a
+  text-decoration: none
+.container
+  width: $container
+  margin: 0 auto
+
+.header
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  border: 1px solid #ececec
+  background-color: #ffffff
+  height: 100px
+  &-flex
+    display: flex
+    justify-content: space-between
+    height: 100%
+    align-items: center
+  &__left
+    display: flex
+    align-items: center
+  &__form
+    display: flex
+    align-items: center
+    height: 36px
+    .browse
+      width: 73px
+      height: 100%
+      border-bottom-left-radius: 3px
+      border-top-left-radius: 3px
+      background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
+      line-height: 33px
+      color: $textColor
+      font-size: 14px
+      border: 1px solid $borderGrayColor
+      border-right: none
+      position: relative
+      padding-left: 10px
+      transition: all 0.3s
+    .browse:hover
+      background-image: linear-gradient(180deg, #f5f5f5 10%, $pink 100%)
+      box-shadow: 1.3px 1.3px 1.6px 0.05px rgba(33,33,33,0.35)
+      cursor: pointer
+    .browse:hover .drop
+      z-index: 1
+      display: flex
+    .browse:active
+      box-shadow: 0.5px 0.5px 0.5px 0 rgba(33,33,33,0.35)
+    .arrow
+      margin-left: 5px
+    .input
+      width: 255px
+      height: 100%
+      font-size: 14px
+      font-weight: 300
+      color: $inputText
+      padding-left: 20px
+      border: 1px solid $borderGrayColor
+      padding-right: 20px
+    .search
+      width: 36px
+      height: 100%
+      background-color: #ffffff
+      border: 1px solid $borderGrayColor
+      border-left: none
+      border-bottom-right-radius: 3px
+      border-top-right-radius: 3px
+      &:active .search__i
+        transform: scale(0.9)
+      &:hover
+        cursor: pointer
+      &__i
+        width: 15px
+        margin-top: 10px
+        margin-left: 10px
+        transition: transform 0.3s
+  &__right
+    display: flex
+    align-items: center
+    transition: transform 0.3s
+    .cart
+      margin-right: 26px
+      transition: transform 0.3s
+    .cart:hover
+      cursor: pointer
+    .cart:active
+      transform: scale(0.9)
+.button
+  background-color: $pink
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  padding: 12px 19px
+  letter-spacing: 0.38px
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: box-shadow 0.3s
+  &:hover
+    box-shadow: 1.3px 2.3px 1.6px 0.05px rgba(33,33,33,0.35)
+.logo
+  display: flex
+  align-items: center
+  margin-right: 37px
+  color: $textColor
+  font-size: 27px
+  font-weight: 300
+  text-transform: uppercase
+  & img
+    margin-right: 10px
+  &-d
+    color: $pink
+    font-weight: 900
+    letter-spacing: 0.68px
+
+.nav
+  background-color: #ffffff
+  .menu
+    display: flex
+    list-style-type: none
+    justify-content: center
+    &__link
+      padding: 20px
+      display: block
+      color: $textColor
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+    &__link:hover
+      color: $pink
+    &__list
+      position: relative
+    &__list:hover .drop
+      display: flex
+
+
+.promo
+  height: 613px
+  background-color: #e8e8e8
+  .promo-content
+    background-image: url(img/promo.jpg)
+    height: 100%
+    background-position: 0 -51px
+  &__lux
+    color: $textColor
+    font-size: 40px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 31px
+  &__brand
+    color: $textColor
+    font-size: 60px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 45px
+    margin-bottom: 19px
+  &__text
+    margin-top: 224px
+    float: left
+    border-left: 12px solid $pink
+    padding-left: 12px
+
+.offer-flex
+  display: flex
+  margin-top: 78px
+  &__left
+    display: flex
+    flex-direction: column
+  &__right
+    display: flex
+    flex-direction: column
+    margin-left: 20px
+  &__deal
+    margin-top: 20px
+    width: $container / 2.0357
+    transition: box-shadow 0.3s
+  &__deal:hover
+    box-shadow: 1.3px 2.3px 1.6px 1.05px rgba(33,33,33,0.35)
+  &__deal_big
+    height: 542px
+  &__deal_small
+    height: 261px
+  &__deal_hot-deal
+    background: url("img/Layer1.jpg")
+  &__deal_luxirous
+    background: url("img/Layer2.jpg")
+  &__deal_offer
+    background: url("img/Layer3.jpg")
+  &__deal_new-arrivals
+    background: url("img/Layer4.jpg")
+  &__label
+    float: left
+    background-color: #ffffff
+    height: 82px
+    margin-top: 26px
+    padding-right: 15px
+    text-transform: uppercase
+  &__text1
+    color: $textColor
+    font-weight: 900
+    font-size: 18px
+    margin-top: 14px
+    margin-left: 15px
+  &__text2
+    color: $pink
+    font-weight: 900
+    font-size: 30px
+    margin-left: 15px
+
+.featured-flex
+  display: flex
+  justify-content: center
+  flex-direction: column
+  margin-top: 98px
+  &__head
+    text-align: center
+  &__text1
+    font-size: 30px
+    font-weight: 700
+    color: $textColor
+  &__text2
+    color: #9f9f9f
+    font-size: 14px
+    font-weight: 400
+    line-height: 54px
+.product-box
+  padding-top: 60px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+.product
+  position: relative
+  margin-bottom: 39px
+  transition: box-shadow 0.3s
+  &__text
+    padding: 20px 15px
+  &__name
+    color: $textColor
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+  &__prise
+    color: $pink
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 15px
+  &__add
+    display: none
+    width: 123px
+    height: 39px
+    line-height: 39px
+    color: #ffffff
+    font-size: 13px
+    font-weight: 700
+    border: 1px solid #ffffff
+    position: absolute
+    top: 98px
+    left: 70px
+    text-align: center
+  &__add:hover
+    box-shadow: 0 0 5px #fff
+  &:hover
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+  &:hover .product__img
+    filter: brightness(50%)
+  &:hover .product__add
+    display: block
+  &__img
+    width: 100%
+  &_down
+    display: flex
+    justify-content: space-between
+    align-content: center
+    height: 44px
+
+.featured-flex__button
+  display: flex
+  justify-content: center
+  height: 48px
+  .button_featured
+    width: 212px
+  .button_browse
+    height: 100%
+    padding: 0 0 0 0
+    width: 212px
+    font-size: 16px
+    font-weight: 700
+  .fa-long-arrow-alt-right
+    margin-left: 20px
+  .fa-caret-down
+    margin-left: 10px
+
+.downPromo-flex
+  display: flex
+  margin-top: 113px
+  padding-bottom: 100px
+  &__left
+    width: $container / 1.486
+    height: 529px
+    background: url("img/Layer_39.png"), url("img/LayerX.jpg")
+  &__text
+    float: left
+    margin-left: 39px
+    margin-top: 146px
+    color: #ffffff
+  &__text1
+    font-weight: 700
+    font-size: 60px
+  &__text2
+    font-size: 36px
+  &__pink
+    color: $pink
+  &__right
+    display: flex
+    flex-direction: column
+    background-color: $textColor
+    padding-top: 48px
+.promo-block
+  display: flex
+  &__pic
+    width: $container / 10
+    height: 160px
+    text-align: center
+  &__body
+    width: $container / 4.401
+  &__head
+    color: #fbfbfb
+    font-size: 20px
+    font-weight: 700
+  &__text
+    color: #fbfbfb
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    margin-top: 10px
+
+.SubscribeAndReview
+  height: 438px
+  background: url("img/subribe-bg.jpg") round
+.SubscribeAndReview-flex
+  height: 100%
+  display: flex
+.review
+  display: flex
+  width: 50%
+  margin-top: 111px
+  &__block
+    margin-left: 28px
+    margin-right: 70px
+  &__text
+    color: $textColor
+    font-size: 16px
+    font-style: italic
+    line-height: 26px
+  &__name
+    color: $pink
+    font-size: 16px
+    font-weight: 700
+    line-height: 26px
+    margin-top: 15px
+  &__address
+    font-size: 12px
+    font-weight: 300
+    color: $textColor
+.subscribe
+  width: 50%
+  border-left: 1px solid $borderGrayColor
+  text-align: center
+  font-weight: 400
+  &__head
+    text-align: center
+    margin-top: 115px
+    font-size: 24px
+    line-height: 54px
+    color: $textColor
+  &__text
+    font-size: 14px
+    line-height: 24px
+    color: $textColor
+  &__form
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 46px
+    margin-top: 35px
+  &__input
+    width: 275px
+    height: 100%
+    font-size: 14px
+    color: $inputText
+    padding-left: 25px
+    border: 1px solid $borderGrayColor
+    border-bottom-left-radius: 23px
+    border-top-left-radius: 23px
+    padding-right: 25px
+  &__subscribe:focus
+    outline: none
+  &__enter
+    height: 48px
+    width: 104px
+    text-align: center
+    line-height: 46px
+    color: #ffffff
+    font-size: 14px
+    background-color: $pink
+    border-bottom-right-radius: 23px
+    border-top-right-radius: 23px
+    transition: all 0.3s
+  &__enter:hover
+    cursor: pointer
+    box-shadow: 1.3px 2.3px 1.6px 0.05px rgba(33, 33, 33, 0.35)
+
+
+.aboutUs
+  height: 458px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__brand
+    display: flex
+    flex-direction: column
+    max-width: $container / 2.669
+  &__text
+    color: #898989
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    margin-top: 29px
+  &__details
+    display: flex
+    flex-direction: column
+  &__details a:hover
+    color: $pink
+  &__details a
+    color: #898989
+    font-size: 16px
+    font-weight: 400
+    line-height: 2
+  &__head
+    color: $pink
+    font-size: 18px
+    font-weight: 700
+    line-height: 26px
+    padding-bottom: 20px
+
+.coopSocial
+  height: 79px
+  background-color: #e6e6e6
+.coopSocial-flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100%
+  &__coop
+    color: #7a7a7a
+    font-size: 16px
+    font-weight: 400
+  &__social
+    display: flex
+    justify-content: space-around
+  &__social a
+    display: flex
+    justify-content: center
+    align-content: center
+    width: 32px
+    height: 32px
+    background-color: #ffffff
+    margin-left: 8px
+    transition: all 0.5s
+  &__social a:hover
+    background-color: $pink
+  &__social a:hover .socialicon
+    color: white
+  .socialicon
+    margin-top: 7px
+    color: #b2b2b2
+    font-size: 16px
+    font-weight: 400
+/*выпадающее меню в nav*/
+.drop
+  border-radius: 5px
+  background-color: #ffffff
+  padding: 12px 20px
+  border: 1px solid #ececec
+  display: none
+  position: absolute
+  top: 48px
+  left: -5px
+  &__flex
+    width: 235px
+    margin-right: 46px
+  &::before
+    content: ''
+    width: 12px
+    height: 12px
+    background-color: #fff
+    position: absolute
+    top: -7px
+    left: 33px
+    transform: rotate(45deg)
+    border-top: 1px solid #e8e8e8
+    border-left: 1px solid #e8e8e8
+  &__menu
+    list-style-type: none
+  &__h3
+    color: #232323
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    border-bottom: 1px solid #e8e8e8
+    letter-spacing: 0.35px
+    padding-bottom: 8px
+    padding-top: 8px
+    margin-bottom: 8px
+  &__link
+    color: #646464
+    font-size: 14px
+    font-weight: 400
+    line-height: 28px
+    letter-spacing: 0.35px
+  &__link:hover
+    color: $pink
+  &__flex:last-of-type
+    margin-right: 0
+  &_last
+    left: -450px
+  &_last::before
+    left: 500px
+  &__img
+    display: flex
+    height: 118px
+    width: 100%
+    background-image: url("img/dropsupersale.jpg")
+    margin-top: 15px
+    justify-content: flex-end
+    align-items: flex-end
+  &__supersale
+    color: white
+    font-weight: 900
+    font-size: 22px
+    line-height: 28px
+/*выпадающее меню в browse*/
+.drop_browse
+  top: 35px
+  left: -2px
+  &::before
+    content: ''
+    width: 7px
+    height: 7px
+    background-color: #fff
+    position: absolute
+    top: -5px
+    left: 65px
+    transform: rotate(45deg)
+    border-top: 1px solid #e8e8e8
+    border-left: 1px solid #e8e8e8
+
+
+
+

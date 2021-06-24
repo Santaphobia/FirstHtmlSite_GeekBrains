@@ -1,0 +1,183 @@
+@import "vars"
+/*product page*/
+.menu__link-active
+  border-bottom: 3px solid #ef5b70
+
+
+.productsPage__menu
+  height: 148px
+  background-color: #f8f3f4
+.menu-products
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100%
+  &__right
+    font-size: 14px
+  .colorpink
+    color: $pink
+    font-weight: 700
+  &__menu
+    color: #636363
+    font-weight: 300
+  &__slash
+    color: #636363
+  &__left
+    font-size: 24px
+    font-weight: 900
+
+.productsPage-flex
+  display: flex
+  &__nav
+    display: flex
+    flex-direction: column
+    margin-top: 41px
+.summary
+  display: block
+  width: $container / 4.7
+  border-left: 5px solid #ef5b70
+  height: 37px
+  align-content: center
+  border-bottom: 1px solid $borderGrayColor
+  &::-webkit-details-marker
+    display: none
+  &_ul
+    list-style-type: none
+  &_text
+    color: #ef5b70
+    font-size: 14px
+    font-weight: 700
+    line-height: 34px
+    margin-left: 11px
+    display: block
+    float: left
+  &_arrow
+    height: 100%
+    float: right
+  &_il
+    margin-left: 16px
+    margin-top: 5px
+    font-size: 14px
+    font-weight: 400
+    height: 30px
+    display: flex
+  &_il a
+    display: flex
+    align-items: center
+    color: #6f6e6e
+    width: 100%
+    height: 100%
+  &_il a:hover
+    color: #ef5b70
+  &:focus
+    outline: none
+details[open] .summary_arrow
+  transform: scale(-1,-1)
+details
+  margin-top: 18px
+details:hover
+  cursor: pointer
+
+.input:focus
+  outline: none
+.productsPage-flex__mainblock
+  display: flex
+  flex-direction: column
+  margin-left: 56px
+  width: 100%
+.productsPage-flex__setup
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+.setup-blocks
+  margin-top: 71px
+  width: $container / 4.334
+  &__head
+    font-size: 14px
+    color: #6f6e6e
+    font-weight: 700
+    line-height: 20px
+  &__trendingNowList
+    margin-top: 22px
+    line-height: 30px
+  &__list a
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+  &__list a:hover
+    color: #dfdfdf
+  &__list
+    margin-top: 22px
+    line-height: 30px
+    max-width: 263px
+  &__list label
+    font-size: 14px
+    font-weight: 400
+    color: #6f6e6e
+    padding-right: 23px
+  #range
+    width: 100%
+
+.product-sort
+  height: 50px
+  background-color: #f3f3f3
+  margin-top: 43px
+  display: flex
+  align-items: center
+  &__sortBy
+    height: 100%
+    width: 75px
+    padding-left: 15px
+    border: 1px solid $borderGrayColor
+  &__block
+    height: 30px
+    display: flex
+    align-content: center
+    margin-left: 10px
+  &__name
+    height: 100%
+    background-color: #ffffff
+    border: 1px solid $borderGrayColor
+    border-right: none
+    width: 63px
+    text-align: center
+    line-height: 28px
+    font-size: 14px
+    font-weight: 400
+    color: #6f6e6e
+
+.ViewAll
+  height: 100%
+  width: 150px
+  border: 1px solid #ef5b70
+  border-radius: 3px
+  text-align: center
+.ViewAll p
+  font-weight: 300
+  color: #ef5b70
+  line-height: 41px
+.ViewAll:hover
+  background-color: #ef5b70
+  cursor: pointer
+.ViewAll:hover p
+  color: white
+
+.promo_product
+  background-color: $textColor
+  height: 341px
+  margin-top: 110px
+.promo_product-flex
+  display: flex
+  justify-content: space-around
+  align-content: center
+  height: 100%
+.promo_product-flex__block
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  padding: 0 10px 0 10px
+.promo_product_text
+  margin-top: 32px
+
+

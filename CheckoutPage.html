@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SinglePage</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header">
+    	<div class="container header-flex">
+            <div class="header__left">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
+                <form class="header__form" action="#">
+                    <div class="browse">Browse<i class="fas fa-caret-down arrow"></i>
+						<div class="drop drop_browse">
+							<div class="drop__flex">
+								<h3 class="drop__h3">WOMEN</h3>
+								<ul class="drop__menu">
+									<li><a href="#" class="drop__link">Dresses</a></li>
+									<li><a href="#" class="drop__link">Tops</a></li>
+									<li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+									<li><a href="#" class="drop__link">Jackets/Coats</a></li>
+									<li><a href="#" class="drop__link">Blazers</a></li>
+									<li><a href="#" class="drop__link">Denim</a></li>
+									<li><a href="#" class="drop__link">Leggings/Pants</a></li>
+								</ul>
+								<h3 class="drop__h3">MAN</h3>
+								<ul class="drop__menu">
+									<li><a href="#" class="drop__link">Dresses</a></li>
+									<li><a href="#" class="drop__link">Tops</a></li>
+									<li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+									<li><a href="#" class="drop__link">Jackets/Coats</a></li>
+									<li><a href="#" class="drop__link">Blazers</a></li>
+									<li><a href="#" class="drop__link">Denim</a></li>
+									<li><a href="#" class="drop__link">Leggings/Pants</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+                  	<input type="text" class="input" placeholder="Search for item...">
+                    <div class="search"><i class="fas fa-search search__i"></i></div>
+                </form>
+            </div>
+            <div class="header__right">
+                <a href="CartPage.html"><img class="cart" src="img/cart.svg" alt="cart"></a>
+                <a href="CheckoutPage.html" class="button">My Account</a>
+            </div>
+        </div>
+    </header>
+	<nav class="nav">
+        <ul class="menu">
+            <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
+            <li class="menu__list"><a href="#" class="menu__link menu__link-active">Man</a></li>
+            <li class="menu__list"><a href="SinglePage.html" class="menu__link">Women</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Featured </a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Hot Deals </a></li>
+        </ul>
+    </nav>
+	<section class="productsPage">
+		<div class="productsPage__menu">
+			<div class="container menu-products">
+				<div class="menu-products__left colorpink">NEW ARRIVALS</div>
+				<div class="menu-products__right"><a href="#" class="menu-products__menu">HOME</a><span class="menu-products__slash">&nbsp;/&nbsp;</span><a href="#" class="menu-products__menu">MEN</a><span class="menu-products__slash">&nbsp;/&nbsp;</span><a href="#" class="colorpink">NEW ARRIVALS</a></div>
+			</div>
+		</div>
+	</section>
+	<div class="checkoutPage-flex container">
+		<details>
+			<summary class="summary summary_checkout summary_first"><p class="summary_chekoutText">01. SHIPPING ADRESS</p></summary>
+			<ul class="summary_ul">
+				<li class="checkoutPage-flex_li">
+					<div class="checkoutPage-flex__chekLeft checkoutPage-flex__chek">
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AS A GUEST OR REGISTER</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<label for="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER" type="checkbox">
+								<span>CHECKOUT AS GUEST</span></label>
+							<label for="checkoutPage-flex__REGISTER" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__REGISTER" type="checkbox"><span>REGISTER</span></label>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AND SAVE TIME</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+						</div>
+						<div class="button button_checkout">CONTINUE</div>
+					</div>
+					<form class="log-inForm checkoutPage-flex__chek">
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">ALREADY REGISTED</p>
+							<p class="log-inForm__slimText">Pleas log in below</p>
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<p class="log-inForm__required">* Required Fileds</p>
+						<div class="log-inForm__loginButtonBlock">
+							<div class="button button_login">LOG IN</div> <a href="#" class="log-inForm__forgotPassword">Forgot Password?</a>
+						</div>
+					</form>
+				</li>
+			</ul>
+		</details>
+		<details>
+			<summary class="summary summary_checkout"><p class="summary_chekoutText">02. BILLING INFORMATION</p></summary>
+			<ul class="summary_ul">
+				<li class="checkoutPage-flex_li">
+					<div class="checkoutPage-flex__chekLeft checkoutPage-flex__chek">
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AS A GUEST OR REGISTER</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<label for="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER" type="checkbox">
+								<span>CHECKOUT AS GUEST</span></label>
+							<label for="checkoutPage-flex__REGISTER" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__REGISTER" type="checkbox"><span>REGISTER</span></label>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AND SAVE TIME</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+						</div>
+						<div class="button button_checkout">CONTINUE</div>
+					</div>
+					<form class="log-inForm checkoutPage-flex__chek">
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">ALREADY REGISTED</p>
+							<p class="log-inForm__slimText">Pleas log in below</p>
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<p class="log-inForm__required">* Required Fileds</p>
+						<div class="log-inForm__loginButtonBlock">
+							<div class="button button_login">LOG IN</div> <a href="#" class="log-inForm__forgotPassword">Forgot Password?</a>
+						</div>
+					</form>
+				</li>
+			</ul>
+		</details>
+		<details>
+			<summary class="summary summary_checkout"><p class="summary_chekoutText">03. SHIPPING INFORMATION</p></summary>
+			<ul class="summary_ul">
+				<li class="checkoutPage-flex_li">
+					<div class="checkoutPage-flex__chekLeft checkoutPage-flex__chek">
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AS A GUEST OR REGISTER</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<label for="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER" type="checkbox">
+								<span>CHECKOUT AS GUEST</span></label>
+							<label for="checkoutPage-flex__REGISTER" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__REGISTER" type="checkbox"><span>REGISTER</span></label>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AND SAVE TIME</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+						</div>
+						<div class="button button_checkout">CONTINUE</div>
+					</div>
+					<form class="log-inForm checkoutPage-flex__chek">
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">ALREADY REGISTED</p>
+							<p class="log-inForm__slimText">Pleas log in below</p>
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<p class="log-inForm__required">* Required Fileds</p>
+						<div class="log-inForm__loginButtonBlock">
+							<div class="button button_login">LOG IN</div> <a href="#" class="log-inForm__forgotPassword">Forgot Password?</a>
+						</div>
+					</form>
+				</li>
+			</ul>
+		</details>
+		<details>
+			<summary class="summary summary_checkout"><p class="summary_chekoutText">04. SHIPPING METHOD</p></summary>
+			<ul class="summary_ul">
+				<li class="checkoutPage-flex_li">
+					<div class="checkoutPage-flex__chekLeft checkoutPage-flex__chek">
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AS A GUEST OR REGISTER</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<label for="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER" type="checkbox">
+								<span>CHECKOUT AS GUEST</span></label>
+							<label for="checkoutPage-flex__REGISTER" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__REGISTER" type="checkbox"><span>REGISTER</span></label>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AND SAVE TIME</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+						</div>
+						<div class="button button_checkout">CONTINUE</div>
+					</div>
+					<form class="log-inForm checkoutPage-flex__chek">
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">ALREADY REGISTED</p>
+							<p class="log-inForm__slimText">Pleas log in below</p>
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<p class="log-inForm__required">* Required Fileds</p>
+						<div class="log-inForm__loginButtonBlock">
+							<div class="button button_login">LOG IN</div> <a href="#" class="log-inForm__forgotPassword">Forgot Password?</a>
+						</div>
+					</form>
+				</li>
+			</ul>
+		</details>
+		<details>
+			<summary class="summary summary_checkout"><p class="summary_chekoutText">05. PAYMENT METHOD</p></summary>
+			<ul class="summary_ul">
+				<li class="checkoutPage-flex_li">
+					<div class="checkoutPage-flex__chekLeft checkoutPage-flex__chek">
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AS A GUEST OR REGISTER</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<label for="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER" type="checkbox">
+								<span>CHECKOUT AS GUEST</span></label>
+							<label for="checkoutPage-flex__REGISTER" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__REGISTER" type="checkbox"><span>REGISTER</span></label>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AND SAVE TIME</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+						</div>
+						<div class="button button_checkout">CONTINUE</div>
+					</div>
+					<form class="log-inForm checkoutPage-flex__chek">
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">ALREADY REGISTED</p>
+							<p class="log-inForm__slimText">Pleas log in below</p>
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<p class="log-inForm__required">* Required Fileds</p>
+						<div class="log-inForm__loginButtonBlock">
+							<div class="button button_login">LOG IN</div> <a href="#" class="log-inForm__forgotPassword">Forgot Password?</a>
+						</div>
+					</form>
+				</li>
+			</ul>
+		</details>
+		<details>
+			<summary class="summary summary_checkout summary_last"><p class="summary_chekoutText">06. ORDER REVIEW</p></summary>
+			<ul class="summary_ul">
+				<li class="checkoutPage-flex_li">
+					<div class="checkoutPage-flex__chekLeft checkoutPage-flex__chek">
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AS A GUEST OR REGISTER</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<label for="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__GUEST" class="checkoutPage-flex__GUESTREGISTER" type="checkbox">
+								<span>CHECKOUT AS GUEST</span></label>
+							<label for="checkoutPage-flex__REGISTER" class="checkoutPage-flex__GUESTREGISTER">
+								<input id="checkoutPage-flex__REGISTER" type="checkbox"><span>REGISTER</span></label>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__fatText">CHEK AND SAVE TIME</p>
+							<p class="checkoutPage-flex__slimText">Register with us for future convenience</p>
+						</div>
+						<div class="checkoutPage-flex__Text">
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+							<p class="checkoutPage-flex__slimText"><i class="fas fa-angle-double-right"></i>Register with us for future convenience</p>
+						</div>
+						<div class="button button_checkout">CONTINUE</div>
+					</div>
+					<form class="log-inForm checkoutPage-flex__chek">
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">ALREADY REGISTED</p>
+							<p class="log-inForm__slimText">Pleas log in below</p>
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<div class="log-inForm__textForm">
+							<p class="log-inForm__fatText">EMAIL ADDRESS<span class="pink">*</span></p>
+							<input type="text" class="log-inForm__inputText" placeholder="">
+						</div>
+						<p class="log-inForm__required">* Required Fileds</p>
+						<div class="log-inForm__loginButtonBlock">
+							<div class="button button_login">LOG IN</div> <a href="#" class="log-inForm__forgotPassword">Forgot Password?</a>
+						</div>
+					</form>
+				</li>
+			</ul>
+		</details>
+	</div>
+	<footer>
+		<div class="SubscribeAndReview">
+			<div class="container SubscribeAndReview-flex">
+				<div class="review">
+					<div class="review__photo">
+						<img src="img/face.png" alt="face">
+					</div>
+					<div class="review__block">
+						<p class="review__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi repudiandae laudantium accusamus, provident aliquam minima."</p>
+						<p class="review__name">Bin Burhan</p>
+						<p class="review__address">Dhaka, Bd</p>
+					</div>
+				</div>
+				<article class="subscribe">
+					<p class="subscribe__head">SUBSCRIBE</p>
+					<p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
+					<form class="subscribe__form" action="#">
+                  		<input type="text" class="subscribe__input" placeholder="Enter Your Email">
+                    	<div class="subscribe__enter"><p>Subscribe</p></div>
+                	</form>
+				</article>
+			</div>
+		</div>
+		<div class="container aboutUs">
+			<div class="aboutUs__brand">
+				<a class="logo" href="#"><img src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
+				<p class="aboutUs__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, aliquam corporis molestias blanditiis necessitatibus amet dolor distinctio voluptate? Quae quibusdam perspiciatis ab similique facere alias pariatur tenetur repudiandae explicabo accusamus. Voluptate, quasi, officia. Itaque porro quasi, id assumenda facere repudiandae.</p>
+			</div>
+			<article class="aboutUs__details">
+				<p class="aboutUs__head">COMPANY</p>
+				<a href="#">Home</a>
+				<a href="#">Shop</a>
+				<a href="#">About</a>
+				<a href="#">How It Works</a>
+				<a href="#">Contact</a>
+			</article>
+			<article class="aboutUs__details">
+				<p class="aboutUs__head">INFORMATION</p>
+				<a href="#">Tearms & Condition</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">How to Buy</a>
+				<a href="#">How to Sell</a>
+				<a href="#">Promotion</a>
+			</article>
+			<article class="aboutUs__details">
+				<p class="aboutUs__head">SHOP CATEGORY</p>
+				<a href="#">Men</a>
+				<a href="#">Women</a>
+				<a href="#">Child</a>
+				<a href="#">Apparel</a>
+				<a href="#">Brows All</a>
+			</article>
+		</div>
+		<div class="coopSocial">
+			<div class="container coopSocial-flex">
+				<div class="coopSocial-flex__coop">&copy; 2017 Brand All Rights Reserved.</div>
+				<div class="coopSocial-flex__social">
+					<a href="#"><i class="fab fa-facebook-f socialicon"></i></a>
+					<a href="#"><i class="fab fa-twitter socialicon"></i></a>
+					<a href="#"><i class="fab fa-instagram socialicon"></i></a>
+					<a href="#"><i class="fab fa-pinterest socialicon"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g socialicon"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

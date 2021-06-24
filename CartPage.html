@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SinglePage</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header">
+    	<div class="container header-flex">
+            <div class="header__left">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
+                <form class="header__form" action="#">
+                    <div class="browse">Browse<i class="fas fa-caret-down arrow"></i>
+						<div class="drop drop_browse">
+							<div class="drop__flex">
+								<h3 class="drop__h3">WOMEN</h3>
+								<ul class="drop__menu">
+									<li><a href="#" class="drop__link">Dresses</a></li>
+									<li><a href="#" class="drop__link">Tops</a></li>
+									<li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+									<li><a href="#" class="drop__link">Jackets/Coats</a></li>
+									<li><a href="#" class="drop__link">Blazers</a></li>
+									<li><a href="#" class="drop__link">Denim</a></li>
+									<li><a href="#" class="drop__link">Leggings/Pants</a></li>
+								</ul>
+								<h3 class="drop__h3">MAN</h3>
+								<ul class="drop__menu">
+									<li><a href="#" class="drop__link">Dresses</a></li>
+									<li><a href="#" class="drop__link">Tops</a></li>
+									<li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+									<li><a href="#" class="drop__link">Jackets/Coats</a></li>
+									<li><a href="#" class="drop__link">Blazers</a></li>
+									<li><a href="#" class="drop__link">Denim</a></li>
+									<li><a href="#" class="drop__link">Leggings/Pants</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+                  	<input type="text" class="input" placeholder="Search for item...">
+                    <div class="search"><i class="fas fa-search search__i"></i></div>
+                </form>
+            </div>
+            <div class="header__right">
+                <a href="#"><img class="cart" src="img/cart.svg" alt="cart"></a>
+                <a href="CheckoutPage.html" class="button">My Account</a>
+            </div>
+        </div>
+    </header>
+	<nav class="nav">
+        <ul class="menu">
+            <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
+            <li class="menu__list"><a href="#" class="menu__link menu__link-active">Man</a></li>
+            <li class="menu__list"><a href="SinglePage.html" class="menu__link">Women</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Featured </a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Hot Deals </a></li>
+        </ul>
+    </nav>
+	<section class="productsPage">
+		<div class="productsPage__menu">
+			<div class="container menu-products">
+				<div class="menu-products__left colorpink">NEW ARRIVALS</div>
+				<div class="menu-products__right"><a href="#" class="menu-products__menu">HOME</a><span class="menu-products__slash">&nbsp;/&nbsp;</span><a href="#" class="menu-products__menu">MEN</a><span class="menu-products__slash">&nbsp;/&nbsp;</span><a href="#" class="colorpink">NEW ARRIVALS</a></div>
+			</div>
+		</div>
+	</section>
+	<div class="cartPage-flex container">
+		<div class="cartPage-flex__mainBlock">
+			<div class="cartPage-flex__headings">
+				<div class="cartPage-flex__blockDetails">PRODUCT DETAILS</div>
+				<div class="cartPage-flex__blockName"></div>
+				<div class="cartPage-flex__block">UNITE PRICE</div>
+				<div class="cartPage-flex__block">QUANITY</div>
+				<div class="cartPage-flex__block">SHIPPING</div>
+				<div class="cartPage-flex__block">SUBTOTAL</div>
+				<div class="cartPage-flex__blockAction">ACTION</div>
+			</div>
+			<div class="cartPage-flex__product">
+				<img src="img/cartPic.jpg" alt="pic">
+				<div class="cartPage-flex__blockName">
+					<p class="cartPage-flex__name">MANGO</p>
+					<p class="cartPage-flex__colorSize">Color: <span>Red</span></p>
+					<p class="cartPage-flex__colorSize">Size: <span>XII</span></p>
+				</div>
+				<div class="cartPage-flex__block">
+					<p class="cartPage-flex__price">$150</p>
+				</div>
+				<div class="cartPage-flex__block">
+					<p class="cartPage-flex__quanity">$150</p>
+			  </div>
+				<div class="cartPage-flex__block">
+					<input type="text" class="cartPage-flex__shipping" placeholder="2">
+				</div>
+				<div class="cartPage-flex__block">
+					<p class="cartPage-flex__subtotal">$300</p>
+			  </div>
+				<div class="cartPage-flex__blockAction">
+					<i class="fas fa-times-circle cartPage-flex__action"></i>
+				</div>
+			</div>
+			<div class="cartPage-flex__product">
+				<img src="img/cartPic.jpg" alt="pic">
+				<div class="cartPage-flex__blockName">
+					<p class="cartPage-flex__name">MANGO</p>
+					<p class="cartPage-flex__colorSize">Color: <span>Red</span></p>
+					<p class="cartPage-flex__colorSize">Size: <span>XII</span></p>
+				</div>
+				<div class="cartPage-flex__block">
+					<p class="cartPage-flex__price">$150</p>
+				</div>
+				<div class="cartPage-flex__block">
+					<p class="cartPage-flex__quanity">$150</p>
+			  </div>
+				<div class="cartPage-flex__block">
+					<input type="text" class="cartPage-flex__shipping" placeholder="2">
+				</div>
+				<div class="cartPage-flex__block">
+					<p class="cartPage-flex__subtotal">$300</p>
+			  </div>
+				<div class="cartPage-flex__blockAction">
+					<i class="fas fa-times-circle cartPage-flex__action"></i>
+				</div>
+			</div>
+			<div class="cartPage-flex__product">
+				<img src="img/cartPic.jpg" alt="pic">
+				<div class="cartPage-flex__blockName">
+					<p class="cartPage-flex__name">MANGO</p>
+					<p class="cartPage-flex__colorSize">Color: <span>Red</span></p>
+					<p class="cartPage-flex__colorSize">Size: <span>XII</span></p>
+				</div>
+				<div class="cartPage-flex__block">
+					<p class="cartPage-flex__price">$150</p>
+				</div>
+				<div class="cartPage-flex__block">
+					<p class="cartPage-flex__quanity">$150</p>
+			  </div>
+				<div class="cartPage-flex__block">
+					<input type="text" class="cartPage-flex__shipping" placeholder="2">
+				</div>
+				<div class="cartPage-flex__block">
+					<p class="cartPage-flex__subtotal">$300</p>
+			  </div>
+				<div class="cartPage-flex__blockAction">
+					<i class="fas fa-times-circle cartPage-flex__action"></i>
+				</div>
+			</div>
+		</div>
+		<div class="cartPage-flex__buttons">
+			<div class="button_cart button">CLEAR SHOPPING CART</div>
+			<div class="button_cart button">CONTINUE SHOPPING</div>
+		</div>
+		<div class="cartPage-flex__setups">
+			<article class="cartPage-flex__adress cartPage-flex__setupBlock">
+				<p class="cartPage-flex__Heading">SHIPPING ADRESS</p>
+				<input placeholder="Bangladesh" class="cartPage-flex__setup" id="fruit" list="dl_fruits">
+				<datalist id="dl_fruits">
+					<option label="Яблоко" value="apple"></option>
+					<option label="Ананас" value="ananas"></option>
+					<option label="Абрикос" value="apricot"></option>
+					<option label="Арбуз" value="watermelon"></option>
+					<option label="Авокадо" value="avocado"></option>
+					<option label="Апельсин" value="Orange"></option>
+				</datalist>
+				<input placeholder="State" class="cartPage-flex__setup" id="fruit" list="dl_fruits">
+				<datalist id="dl_fruits">
+					<option label="Яблоко" value="apple"></option>
+					<option label="Ананас" value="ananas"></option>
+					<option label="Абрикос" value="apricot"></option>
+					<option label="Арбуз" value="watermelon"></option>
+					<option label="Авокадо" value="avocado"></option>
+					<option label="Апельсин" value="Orange"></option>
+				</datalist>
+				<input placeholder="Postcode/Zip" class="cartPage-flex__setup" id="fruit" list="dl_fruits">
+				<datalist id="dl_fruits">
+					<option label="Яблоко" value="apple"></option>
+					<option label="Ананас" value="ananas"></option>
+					<option label="Абрикос" value="apricot"></option>
+					<option label="Арбуз" value="watermelon"></option>
+					<option label="Авокадо" value="avocado"></option>
+					<option label="Апельсин" value="Orange"></option>
+				</datalist>
+				<div class="button button_setups">GET A QUOTE</div>
+			</article>
+			<article class="cartPage-flex__discount cartPage-flex__setupBlock">
+				<p class="cartPage-flex__Heading">COUPON DISCOUNT</p>
+				<p class="cartPage-flex__discountText">Enter your coupon code if you have one</p>
+				<input type="text" class="cartPage-flex__discountInput" placeholder="Code">
+				<div class="button button_setups">APPLY COUPON</div>
+			</article>
+			<div class="cartPage-flex__total cartPage-flex__setupBlock">
+				<div class="cartPage-flex__totalUpBlock">
+					<p class="cartPage-flex__subTotal">SUB TOTAL<span>$900</span></p>
+					<p class="cartPage-flex__grandTotal">GRAND TOTAL<span>$900</span></p>
+				</div>
+				<div class="button button_total">PROCEED TO CHECKOUT</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="SubscribeAndReview">
+			<div class="container SubscribeAndReview-flex">
+				<div class="review">
+					<div class="review__photo">
+						<img src="img/face.png" alt="face">
+					</div>
+					<div class="review__block">
+						<p class="review__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi repudiandae laudantium accusamus, provident aliquam minima."</p>
+						<p class="review__name">Bin Burhan</p>
+						<p class="review__address">Dhaka, Bd</p>
+					</div>
+				</div>
+				<article class="subscribe">
+					<p class="subscribe__head">SUBSCRIBE</p>
+					<p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
+					<form class="subscribe__form" action="#">
+                  		<input type="text" class="subscribe__input" placeholder="Enter Your Email">
+                    	<div class="subscribe__enter"><p>Subscribe</p></div>
+                	</form>
+				</article>
+			</div>
+		</div>
+		<div class="container aboutUs">
+			<div class="aboutUs__brand">
+				<a class="logo" href="#"><img src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
+				<p class="aboutUs__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, aliquam corporis molestias blanditiis necessitatibus amet dolor distinctio voluptate? Quae quibusdam perspiciatis ab similique facere alias pariatur tenetur repudiandae explicabo accusamus. Voluptate, quasi, officia. Itaque porro quasi, id assumenda facere repudiandae.</p>
+			</div>
+			<article class="aboutUs__details">
+				<p class="aboutUs__head">COMPANY</p>
+				<a href="#">Home</a>
+				<a href="#">Shop</a>
+				<a href="#">About</a>
+				<a href="#">How It Works</a>
+				<a href="#">Contact</a>
+			</article>
+			<article class="aboutUs__details">
+				<p class="aboutUs__head">INFORMATION</p>
+				<a href="#">Tearms & Condition</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">How to Buy</a>
+				<a href="#">How to Sell</a>
+				<a href="#">Promotion</a>
+			</article>
+			<article class="aboutUs__details">
+				<p class="aboutUs__head">SHOP CATEGORY</p>
+				<a href="#">Men</a>
+				<a href="#">Women</a>
+				<a href="#">Child</a>
+				<a href="#">Apparel</a>
+				<a href="#">Brows All</a>
+			</article>
+		</div>
+		<div class="coopSocial">
+			<div class="container coopSocial-flex">
+				<div class="coopSocial-flex__coop">&copy; 2017 Brand All Rights Reserved.</div>
+				<div class="coopSocial-flex__social">
+					<a href="#"><i class="fab fa-facebook-f socialicon"></i></a>
+					<a href="#"><i class="fab fa-twitter socialicon"></i></a>
+					<a href="#"><i class="fab fa-instagram socialicon"></i></a>
+					<a href="#"><i class="fab fa-pinterest socialicon"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g socialicon"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
